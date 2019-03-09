@@ -13,7 +13,7 @@ const port = process.env.PORT || 9000;
 
   const helmet = require('helmet');
 
-  const keys = require('.config/keys');
+  const keys = require('./config/keys');
 
   const nodemailer = require('nodemailer');
 

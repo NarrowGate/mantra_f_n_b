@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,7 @@
     "nodemon": "^1.18.9"
   },
   "dependencies": {
+    "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "helmet": "^3.15.0",
     "nodemailer": "^5.1.1",
