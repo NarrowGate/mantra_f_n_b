@@ -1,0 +1,31 @@
+{
+  "name": "mantradriving",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NarrowGate/mantraDriving.git"
+  },
+  "keywords": [
+    "driving"
+  ],
+  "author": "mw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NarrowGate/mantraDriving/issues"
+  },
+  "homepage": "https://github.com/NarrowGate/mantraDriving#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "nodemailer": "^5.1.1",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}
