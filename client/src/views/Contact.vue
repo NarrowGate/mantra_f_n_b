@@ -155,7 +155,6 @@ export default {
             console.log('form is valid')
             console.log(contactData);
 
-return;
             // console.log(contactData)
 
             axios.post('/process-contact', contactData)

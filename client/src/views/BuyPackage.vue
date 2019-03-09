@@ -106,12 +106,12 @@
                     <div class="columns">
                         <div class="column">
                             <div class="control">
-                                <paypal
+                                <!-- <paypal
                                     amount="10.00"
                                     currency="USD"
                                     :client="credentials">
-                                </paypal>
-                                <!-- <button class="button is-primary" @click.prevent = "payWithPaypal">Pay with Paypal</button> -->
+                                </paypal> -->
+                                <button class="button is-primary" @click.prevent = "payWithPaypal">Pay with Paypal</button>
                             </div>                      
                         </div>
                     </div>                                                     
@@ -184,11 +184,21 @@ export default {
                 console.log('axios post sent')
                 console.log(dfs.data);
 
-                window.location = dfs.data
+                
             })
             .catch((err) => {
                 console.log(err)
             })
+
+
+            // axios.get('/buywithpaypal')
+            // .then((dfs)=> {
+            //     console.log('axios post sent')                    
+            // })
+            // .catch((err) => {
+            //     console.log(err)
+            // })
+
         }
     }
 }
