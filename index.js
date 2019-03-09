@@ -13,6 +13,8 @@ const port = process.env.PORT || 9000;
 
   const helmet = require('helmet');
 
+  const keys = require('.config/keys');
+
   const nodemailer = require('nodemailer');
 
   const paypal = require('paypal-rest-sdk');
@@ -112,8 +114,8 @@ app.post('/buywithpaypal',(req, res, next) => {
 
   paypal.configure({
     'mode': 'sandbox', //sandbox or live
-    'client_id': 'AYT6m6bJPcMrjZXHFgTOFIHfoWvEg6rP7HxI0KdAYb6rI6A9m5yPHNVJVecMHHCTwLFmy8jkm-bC3cnr',
-    'client_secret': 'EKB0005ClxbAjcnmo_XrwOIWXq4rR8dxIvbdagXc3EmleHy_OvOIE0-rPAswB2eL-oT-yuwwp3ifNLLf'
+    'client_id': keys.paypalClient_id,
+    'client_secret': keys.paypalClient_secret
   });
   
   const create_payment_json = {
