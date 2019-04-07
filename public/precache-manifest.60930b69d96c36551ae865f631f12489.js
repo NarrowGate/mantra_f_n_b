@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/img/mantra_bg_long.dc1dca0a.jpg"
   },
   {
-    "revision": "ff8ffa4a1e6b710d40e5",
-    "url": "/js/about.8a5fb1db.js"
+    "revision": "a380458735ed4a496318",
+    "url": "/js/about.1bbc8d7d.js"
   },
   {
-    "revision": "b82048d3919d2c051fb9",
-    "url": "/js/app.eb3be5b0.js"
+    "revision": "af10b9b87954f3f7dfd2",
+    "url": "/js/app.6c35c367.js"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.a6ebbe33.js"
   },
   {
-    "revision": "60bcc7ab252fcd94afde9e212a929d80",
+    "revision": "cdf0eb8d12095fc04559ccf66961f42e",
     "url": "/index.html"
   },
   {
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/css/chunk-vendors.9ab6e0b6.css"
   },
   {
-    "revision": "b82048d3919d2c051fb9",
+    "revision": "af10b9b87954f3f7dfd2",
     "url": "/css/app.620e1bf1.css"
   }
 ];

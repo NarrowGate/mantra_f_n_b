@@ -121,7 +121,8 @@
                             </div>                      
                         </div>
                         <div class="column is-6">
-                            <button class="button is-primary" @click.prevent = "payWithPaypal">Pay with Paypal</button>
+                            <!-- <button class="button is-primary" @click.prevent = "payWithPaypal">Pay with Paypal</button> -->
+                            <button class="button is-primary" @click.prevent = "payMockBtn">Pay h Paypal</button>                            
                         </div>
                     </div>                                                     
                 </form>
@@ -187,6 +188,46 @@ export default {
         }
     },
     methods: {
+
+        payMockBtn: () => {
+            const userDetails = {
+                first_name: 'F name',
+                second_name: 'L name',
+                contact_number: 99999,
+                email: 'eme@ks.com',
+                pickup_address:'Address',
+                transmission: 'Transmission',
+                purchasedPackage: 'Purchased Package',
+                purchasedPackagePrice:1
+            }
+
+            const payerAccountDetails = {
+                first_name : 'Reshma',
+                last_name : 'Melvin',
+                payer_id: 'some id',
+                payment_method: 'Paypal Method',
+                status: 'Approved',
+                total: 10,
+                currency:'AUD'
+            }
+
+            const paymentData = {
+                userDetails,
+                payerAccountDetails
+            }
+
+            console.log(userDetails);
+
+            axios.post('/buywithpaypal',paymentData)
+            .then((dfs)=> {
+                console.log('axios post sent')
+                console.log(dfs.data);                
+            })
+            .catch((err) => {
+                console.log(err)
+            })
+        },
+
         payWithPaypal : () => {
 
             const userDetails = {
@@ -202,7 +243,7 @@ export default {
 
             console.log('hit paypal button');
 
-            axios.post('/buywithpaypal',userDetails)
+            axios.post('/buywithpaypal',paymentData)
             .then((dfs)=> {
                 console.log('axios post sent')
                 console.log(dfs.data);                
